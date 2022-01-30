@@ -2,6 +2,7 @@
 	--primary-color: #445877;
 	--secondary-color: #92cccd;
 	--tertiary-color: #32343d;
+	--quaternary-color: #F3A847;
 }
 
 * {
@@ -45,6 +46,10 @@ body {
     padding: 0 5px;
 }
 
+.list-item:hover {
+	cursor: pointer;
+}
+
 nav {
 	margin-left: auto;
 }
@@ -53,3 +58,8 @@ ul.flexbox {
 	height: 100%;
 	align-items: center;
 }
+
+.navActive {
+	color: var(--quaternary-color);
+}
+

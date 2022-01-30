@@ -5,14 +5,14 @@ import Navigation from './components/Navigation';
 
 function App() {
 	const [categories] = useState([
-        { name: 'About Me', description: '' },
-        { name: 'Portfolio', description: '' },
-        { name: 'Contact', description: '' },
-        { name: 'Resume', description: '' },
-    ]);
+		{ name: 'About Me', description: '' },
+		{ name: 'Portfolio', description: '' },
+		{ name: 'Contact', description: '' },
+		{ name: 'Resume', description: '' },
+	]);
 
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
-	
+	const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
 	return (
 		<div>
 			<Header
@@ -22,12 +22,15 @@ function App() {
 			></Header>
 
 			<main>
-				{ false && <h1>Messages: </h1>}
+				{currentCategory === categories[0] && <h1>Type1: </h1>}
+				{currentCategory === categories[1] && <h1>Type2: </h1>}
+				{currentCategory === categories[2] && <h1>Type3: </h1>}
+				{currentCategory === categories[3] && <h1>Type4: </h1>}
 			</main>
 
 			{/* <Footer>
 
-      </Footer> */}
+			</Footer> */}
 		</div>
 	);
 }
