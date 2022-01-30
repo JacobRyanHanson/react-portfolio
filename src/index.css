@@ -10,7 +10,7 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	
+
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 .flexbox {
 	display: flex;
 	flex-wrap: wrap;
-}	
+}
 
 /* Header Styles*/
 #header-background {
@@ -38,10 +38,11 @@ body {
 #nav-link-container {
 	list-style: none;
 }
+
 .list-item {
 	color: var(--secondary-color);
 	font-size: 30px;
-    padding: 0 5px;
+	padding: 0 5px;
 }
 
 .list-item:hover {
@@ -82,7 +83,7 @@ ul.flexbox {
 #all-projects-container {
 	justify-content: space-around;
 	margin: 30px;
-	
+
 }
 
 .project-container {
@@ -90,7 +91,7 @@ ul.flexbox {
 	margin: 10px;
 	flex-grow: 1;
 	flex-basis: 230px;
-	
+
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	position: relative;
 }
@@ -116,6 +117,7 @@ ul.flexbox {
 	margin: 20px;
 	position: absolute;
 	top: 78%;
+	background: white;
 }
 
 /* Resume Styles */
@@ -124,7 +126,7 @@ ul.flexbox {
 }
 
 #resume-link {
-	color:black;
+	color: black;
 	margin-left: 50px;
 	font-size: large;
 }
@@ -133,9 +135,46 @@ ul.flexbox {
 	margin: 30px 0 0 50px;
 }
 
-#skill-list-container > *{
+#skill-list-container>* {
 	margin: 10px 0 0 70px;
 	font-size: large;
+}
+
+/* Contact Form Styles */
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#contact-form-title {
+	margin: 30px 0 20px 0;
+	text-align: center;
+}
+
+.name-container, .email-container, .message-container {
+	font-size: x-large;
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	margin-bottom: 10px;
+}
+
+.error-text {
+	margin: 10px 0 10px 0px;
+	font-size: large;
+}
+
+button[type=submit] {
+	padding: 10px;
+	width: 250px;
+	font-size: large;
+}
+
+input {
+	padding: 6px;
+	margin: 5px;
+	line-height: 100%;
 }
 
 /* Footer Styles */
@@ -143,7 +182,9 @@ ul.flexbox {
 	justify-content: center;
 }
 
-.github-logo, .linkedin-logo, .stack-overflow-logo {
+.github-logo,
+.linkedin-logo,
+.stack-overflow-logo {
 	border-radius: 50%;
 	height: 60px;
 	margin: 20px;
