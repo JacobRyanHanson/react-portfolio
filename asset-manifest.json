@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.97df4556.css",
+    "main.js": "/react-portfolio/static/js/main.e804deb7.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/run-buddy.png": "/react-portfolio/static/media/run-buddy.df87acdc88058a072d65.png",
+    "static/media/finance-assistant.png": "/react-portfolio/static/media/finance-assistant.4a87d8a895d43fa01027.png",
+    "static/media/git-it-done.png": "/react-portfolio/static/media/git-it-done.40e763b6c4dd8a8691bb.png",
+    "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.e1f8729bd8b170fdc5d5.png",
+    "static/media/hero.png": "/react-portfolio/static/media/hero.173b1cf39774b08b8bb2.png",
+    "static/media/budget-tracker.png": "/react-portfolio/static/media/budget-tracker.78fe9c980dda9f6d1d8f.png",
+    "static/media/taskmaster-pro.png": "/react-portfolio/static/media/taskmaster-pro.b7b06ef3c6ba66475ff9.png",
+    "static/media/avatar.jpg": "/react-portfolio/static/media/avatar.2990f2467b033a7d67c7.jpg",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.26855b19adfa0e0b0d43.pdf",
+    "static/media/stack-overflow-logo.png": "/react-portfolio/static/media/stack-overflow-logo.d55c1ea2ce1cbbe9a309.png",
+    "static/media/linkedin-logo.png": "/react-portfolio/static/media/linkedin-logo.9a1a7f8162140e296345.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.97df4556.css.map": "/react-portfolio/static/css/main.97df4556.css.map",
+    "main.e804deb7.js.map": "/react-portfolio/static/js/main.e804deb7.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97df4556.css",
+    "static/js/main.e804deb7.js"
+  ]
+}
