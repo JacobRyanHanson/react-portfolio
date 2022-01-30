@@ -22,6 +22,7 @@ body {
 	flex-wrap: wrap;
 }	
 
+/* Header Styles*/
 #header-background {
 	padding: 20px;
 	background-position: center;
@@ -30,14 +31,8 @@ body {
 #name {
 	font-size: 50px;
 	padding: 10px;
-	margin-right: 10px;
 	background: var(--secondary-color);
 	display: inline-block;
-}
-
-#avatar {
-	height: 78px;
-	border-radius: 50%;
 }
 
 .list-item {
@@ -63,3 +58,30 @@ ul.flexbox {
 	color: var(--quaternary-color);
 }
 
+/* About Me Styles */
+#about-me {
+	margin: 30px 50px 30px 50px;
+}
+
+#avatar {
+	height: 78px;
+	border-radius: 50%;
+	margin-left: 80px;
+}
+
+.about-text {
+	margin: 30px auto 20px 50px;
+	width: 85%;
+	font-size: large;
+}
+
+/* Footer Styles */
+.logo-container {
+	justify-content: center;
+}
+
+#github-logo, #linkedin-logo, #stack-overflow-logo {
+	border-radius: 50%;
+	height: 60px;
+	margin: 20px;
+}
