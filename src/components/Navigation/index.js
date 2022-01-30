@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
-function Naviation() {
-    const [categories] = useState([
-        { name: 'About Me', description: '' },
-        { name: 'Portfolio', description: '' },
-        { name: 'Contact', description: '' },
-        { name: 'Resume', description: '' },
-      ]);
+function Naviation({props}) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory
+    } = props;
 
     return (
         <nav>
