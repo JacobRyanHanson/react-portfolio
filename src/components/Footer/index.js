@@ -8,15 +8,15 @@ function Footer() {
     return (
         <div className="flexbox logo-container">
             <a href={"https://github.com/JacobRyanHanson"}>
-                <img src={github} id="github-logo" alt="github-logo" />
+                <img src={github} className="github-logo" alt="github-logo" />
             </a>
 
             <a href={"https://www.linkedin.com/in/jacob-hanson-6a2279218"}>
-                <img src={linkedin} id="linkedin-logo" alt="linkedin-logo" />
+                <img src={linkedin} className="linkedin-logo" alt="linkedin-logo" />
             </a>
 
             <a href={"https://stackoverflow.com/users/18073303/jacob-hanson"}>
-                <img src={stackOverflow} id="stack-overflow-logo" alt="stack-overflow-logo" />
+                <img src={stackOverflow} className="stack-overflow-logo" alt="stack-overflow-logo" />
             </a>
         </div>
     )

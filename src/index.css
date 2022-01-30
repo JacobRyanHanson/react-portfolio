@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 	
 }
 
@@ -77,6 +78,46 @@ ul.flexbox {
 	font-size: large;
 }
 
+/* Portfolio Styles */
+#all-projects-container {
+	justify-content: space-around;
+	margin: 30px;
+	
+}
+
+.project-container {
+	height: 400px;
+	margin: 10px;
+	flex-grow: 1;
+	flex-basis: 230px;
+	
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+.project-sub-container {
+	height: 100%;
+	background-size: cover;
+	text-decoration: none;
+}
+
+.project-title {
+	background: lightblue;
+	display: block;
+	font-size: x-large;
+	text-align: center;
+	padding: 10px;
+	color: black;
+}
+
+.project-github-logo {
+	border-radius: 50%;
+	height: 60px;
+	margin: 20px;
+	position: absolute;
+	top: 78%;
+}
+
 /* Resume Styles */
 #resume {
 	margin: 30px 0 20px 50px;
@@ -102,7 +143,7 @@ ul.flexbox {
 	justify-content: center;
 }
 
-#github-logo, #linkedin-logo, #stack-overflow-logo {
+.github-logo, .linkedin-logo, .stack-overflow-logo {
 	border-radius: 50%;
 	height: 60px;
 	margin: 20px;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Project from './components/Project';
 import avatar from "./assets/img/avatar.jpg";
 import resume from "./assets/resume/Resume.pdf";
 
@@ -60,9 +61,7 @@ function App() {
 				}
 
 				{currentCategory === categories[1] &&
-					<>
-						<h1>Type2: </h1>
-					</>
+						<Project></Project>
 				}
 
 				{currentCategory === categories[2] &&
