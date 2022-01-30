@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import avatar from "./assets/img/avatar.jpg";
+import resume from "./assets/resume/Resume.pdf";
 
 function App() {
 	const [categories] = useState([
@@ -72,7 +73,23 @@ function App() {
 
 				{currentCategory === categories[3] &&
 					<>
-						<h1>Type4: </h1>
+						<h1 id="resume">Resume </h1>
+						<a id="resume-link" href={resume} download>Resume Download</a>
+
+						<h2 id="skills">Skills</h2>
+
+						<ul id="skill-list-container">
+							<li>Java</li>
+							<li>Javascript</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Git</li>
+							<li>Rest APIs</li>
+							<li>Node.js</li>
+							<li>SQL</li>
+							<li>NoSQL</li>
+							<li>PWA</li>
+						</ul>
 					</>
 				}
 			</main>

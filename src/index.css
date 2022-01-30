@@ -9,8 +9,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	text-decoration: none;
-	list-style: none;
+	
 }
 
 body {
@@ -35,6 +34,9 @@ body {
 	display: inline-block;
 }
 
+#nav-link-container {
+	list-style: none;
+}
 .list-item {
 	color: var(--secondary-color);
 	font-size: 30px;
@@ -58,7 +60,7 @@ ul.flexbox {
 	color: var(--quaternary-color);
 }
 
-/* About Me Styles */
+/* About Me */
 #about-me {
 	margin: 30px 50px 30px 50px;
 }
@@ -72,6 +74,26 @@ ul.flexbox {
 .about-text {
 	margin: 30px auto 20px 50px;
 	width: 85%;
+	font-size: large;
+}
+
+/* Resume Styles */
+#resume {
+	margin: 30px 0 20px 50px;
+}
+
+#resume-link {
+	color:black;
+	margin-left: 50px;
+	font-size: large;
+}
+
+#skills {
+	margin: 30px 0 0 50px;
+}
+
+#skill-list-container > *{
+	margin: 10px 0 0 70px;
 	font-size: large;
 }
 
