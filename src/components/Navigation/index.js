@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 function Naviation({ props }) {
     const {
-        categories = [],
+        categories,
         setCurrentCategory,
         currentCategory
     } = props;
-
+    
     return (
         <nav>
             <ul id="nav-link-container"className="flexbox">

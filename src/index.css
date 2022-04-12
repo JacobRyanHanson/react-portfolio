@@ -90,7 +90,7 @@ ul.flexbox {
 	height: 400px;
 	margin: 10px;
 	flex-grow: 1;
-	flex-basis: 230px;
+	flex-basis: 361px;
 
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	position: relative;
