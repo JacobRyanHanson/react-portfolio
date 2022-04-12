@@ -18,8 +18,8 @@ function Project() {
         {
             name: 'Deep Thoughts',
             photo: deepThoughts,
-            appLink: 'https://jacobryanhanson.github.io/weather-dashboard/',
-            githubLink: "https://github.com/JacobRyanHanson/weather-dashboard"
+            appLink: 'https://deep-thoughts-54736.herokuapp.com/',
+            githubLink: "https://github.com/JacobRyanHanson/deep-thoughts"
         },
         {
             name: 'Budget Tracker',
@@ -36,14 +36,14 @@ function Project() {
         {
             name: 'Zookeeper',
             photo: zookeeper,
-            appLink: 'https://jacobryanhanson.github.io/git-it-done/',
-            githubLink: "https://github.com/JacobRyanHanson/git-it-done"
+            appLink: 'https://zookeeper-75695.herokuapp.com/',
+            githubLink: "https://github.com/JacobRyanHanson/zookeeper"
         },
         {
             name: 'Pizza Hunt',
             photo: pizzaHunt,
-            appLink: 'https://jacobryanhanson.github.io/run-buddy/',
-            githubLink: "https://github.com/JacobRyanHanson/run-buddy"
+            appLink: 'https://pizza-hunt-98764.herokuapp.com/',
+            githubLink: "https://github.com/JacobRyanHanson/pizza-hunt"
         }
     ]);
 
