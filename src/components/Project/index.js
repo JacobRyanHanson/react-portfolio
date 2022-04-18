@@ -50,14 +50,17 @@ function Project() {
     return (
         <div id="all-projects-container" className="flexbox">
             {projects.map((project, i) => (
-                <a className="project-container" href={project.appLink}>
-                    <div className="project-sub-container" style={{ backgroundImage: `url(${project.photo})` }} key={project.name}>
-                        <span className="project-title">{project.name}</span>
-                        <a href={project.githubLink}>
+                <div key={project.name} className="project-container">
+                    <>
+                        <a key={project.name}  href={project.appLink}>
+                            <span className="project-title">{project.name}</span>
+                            <div className="project-sub-container" style={{ backgroundImage: `url(${project.photo})` }}></div>
+                        </a>
+                        <a href={project.githubLink} className='project-image'>
                             <img src={github} className="project-github-logo" alt="github-logo" />
                         </a>
-                    </div>
-                </a>
+                    </>
+                </div>
             ))}
         </div>
     )
