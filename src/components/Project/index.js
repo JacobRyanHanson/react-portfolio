@@ -48,7 +48,7 @@ function Project() {
     ]);
 
     return (
-        <div id="all-projects-container" className="flexbox">
+        <div className="all-projects-container flexbox">
             {projects.map((project, i) => (
                 <div key={project.name} className="project-container">
                     <>

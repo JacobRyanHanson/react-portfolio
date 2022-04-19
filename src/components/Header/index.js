@@ -5,17 +5,16 @@ function Header(props) {
 
     return (
         <>
-            <div id="header-background">
-                <div className="flexbox test">
-                    <h1 id="name">Jacob Hanson</h1>
+            <div className="header-background">
+                <div className="header flexbox">
+                    <h1 className="name">Jacob Hanson</h1>
                     <Navigation
                         props={props}
                     ></Navigation>
                 </div>
             </div>
-            <div className="divider"></div>
+            <div className="top-divider"></div>
         </>
-
     )
 }
 

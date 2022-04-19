@@ -33,7 +33,9 @@ function App() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if (!formState.from_name.length && !formState.from_email.length && !formState.message.length) {
+		debugger;
+		if (formState.from_name.length > 1 && formState.from_email.length > 1 && formState.message.length > 1) {
+			setSubMessage('Sending email...');
 			emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
 				.then((result) => {
 					setSubMessage('Email sent successfully!');
@@ -83,36 +85,34 @@ function App() {
 				{currentCategory === categories[0] &&
 					<>
 						<h1 className="top-container">About</h1>
-						<div className="flexbox-nowrap">
-							<img src={avatar} id="avatar" alt="avatar" />
-							<p className="about-text">
-								I am a student attending the University of Wisconsin-Milwaukee, with a solid foundation in
-								object-oriented design and practical experience working in teams and developing websites. My
-								degree focuses on computer science with an emphasis on software engineering, supplemented by
-								my mathematics minor. I am highly motivated by my passion for innovative development and am
-								well versed in working with and adapting to emerging technologies. When working on projects,
-								I make it a point to cultivate a deeper understanding of how and why components operate before
-								analyzing functionality as a whole. In this way, I find my implementations more effective,
-								mistakes more informative, and troubleshooting more comprehensive.
-							</p>
-						</div>
-						<div className="flexbox-nowrap about-bottom">
-							<div className="flexbox">
-								<p className="about-text-sub">
+						<div className="flexbox">
+							<div className="img-container flexbox">
+								<img src={avatar} className="avatar" alt="avatar" />
+								<img src={certificate} className="full-stack-certificate" alt="full-stack-certificate" />
+							</div>
+							<div className="about-text-container">
+								<p className="about-text">
+									I am a student attending the University of Wisconsin-Milwaukee, with a solid foundation in
+									object-oriented design and practical experience working in teams and developing websites. My
+									degree focuses on computer science with an emphasis on software engineering, supplemented by
+									my mathematics minor. I am highly motivated by my passion for innovative development and am
+									well versed in working with and adapting to emerging technologies. When working on projects,
+									I make it a point to cultivate a deeper understanding of how and why components operate before
+									analyzing functionality as a whole. In this way, I find my implementations more effective,
+									mistakes more informative, and troubleshooting more comprehensive.
+								</p>
+								<p className="about-text-sub-top">
 									I have approximately two years of equivalent work experience in software engineering and full-stack
 									development between my education, certifications, and projects. I'm well versed in algorithm
 									optimization, data structures, memory manipulation, and web design. In addition, I have worked with
 									various technologies, including MERN, PWAs, and APIs to provide responsive and dynamic user experiences.
 								</p>
-								<p className="about-text-sub">
+								<p className="about-text-sub-bottom">
 									I effectively outlined, set goals and timeframes, delegated, and communicated to complete both Finance
 									Assistant and Game Spot Blog. I also have been recognized on several occasions by UWM for my academic
 									performance earning me a place on the Dean's List.
 								</p>
 							</div>
-
-							<img src={certificate} className="full-stack-certificate" alt="full-stack-certificate" />
-
 						</div>
 					</>
 				}
@@ -128,38 +128,39 @@ function App() {
 				{currentCategory === categories[2] &&
 					<>
 						<h1 className="top-container">Contact Me</h1>
-						<form id="contact-form" onSubmit={handleSubmit}>
-							{subMessage && (
-								<div>
-									<p className="error-text">{subMessage}</p>
+						<div className="contact-form-container">
+							<form className="contact-form" onSubmit={handleSubmit}>
+								{subMessage && (
+									<div>
+										<p className="sub-text">{subMessage}</p>
+									</div>
+								)}
+								<div className="name-container">
+									<label htmlFor="name"></label>
+									<input type="text" name="from_name" placeholder="Name" onChange={handleChange} />
 								</div>
-							)}
-							<div className="name-container">
-								<label htmlFor="name"></label>
-								<input type="text" name="from_name" placeholder="Name" onChange={handleChange} />
-							</div>
-							<div className="email-container">
-								<label htmlFor="email"></label>
-								<input type="email" name="from_email" placeholder="Email" onChange={handleChange} />
-							</div>
-							<div className="message-container">
-								<label htmlFor="message"></label>
-								<textarea name="message" rows="5" placeholder="Message" className="message-box" onChange={handleChange} />
-							</div>
-
-							<button className="submit-button" type="submit">Submit</button>
-						</form>
+								<div className="email-container">
+									<label htmlFor="email"></label>
+									<input type="email" name="from_email" placeholder="Email" onChange={handleChange} />
+								</div>
+								<div className="message-container">
+									<label htmlFor="message"></label>
+									<textarea name="message" rows="5" placeholder="Message" className="message-box" onChange={handleChange} />
+								</div>
+								<button className="submit-button" type="submit">Submit</button>
+							</form>
+						</div>
 					</>
 				}
 
 				{currentCategory === categories[3] &&
 					<>
 						<h1 className="top-container">Resume </h1>
-						<div className="flexbox resume-container">
-							<a id="resume-link" href={resume} download>
+						<a className="resume-link" href={resume} download>
+							<div className="resume-container flexbox">
 								<img src={resume} className="resume" alt="resume" />
-							</a>
-						</div>
+							</div>
+						</a>
 					</>
 				}
 			</main>
