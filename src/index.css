@@ -180,22 +180,6 @@ ul.flexbox {
 	background: white;
 }
 
-/* Resume Styles */
-#resume-link {
-	color: black;
-	margin-left: 50px;
-	font-size: large;
-}
-
-#skills {
-	margin: 30px 0 0 50px;
-}
-
-#skill-list-container>* {
-	margin: 10px 0 0 70px;
-	font-size: large;
-}
-
 /* Contact Form Styles */
 #contact-form {
 	display: flex;
@@ -235,6 +219,15 @@ input {
 .message-box {
 	resize: vertical;
 	padding: 6px;
+}
+
+/* Resume Styles */
+.resume-container {
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.resume {
+	height: 700px;
 }
 
 /* Footer Styles */

@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Project from './components/Project';
 import avatar from "./assets/img/me.jpg";
 import certificate from "./assets/img/full-stack-certificate.jpg"
-import resume from "./assets/resume/Resume.pdf";
+import resume from "./assets/resume/Resume.png";
 import hero from "./assets/img/hero.png"
 
 function App() {
@@ -35,11 +35,11 @@ function App() {
 		e.preventDefault();
 		if (!formState.from_name.length && !formState.from_email.length && !formState.message.length) {
 			emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-			.then((result) => {
-				setSubMessage('Email sent successfully!');
-			}, (error) => {
-				setSubMessage('An internal error has occured. Please refresh the page and try again.');
-			});
+				.then((result) => {
+					setSubMessage('Email sent successfully!');
+				}, (error) => {
+					setSubMessage('An internal error has occured. Please refresh the page and try again.');
+				});
 		} else {
 			setSubMessage('Please fill out the entire form.');
 		}
@@ -51,7 +51,7 @@ function App() {
 				setSubMessage(`A name is required.`);
 			} else {
 				setSubMessage('');
-				setFormState({...formState, from_name: e.target.value});
+				setFormState({ ...formState, from_name: e.target.value });
 			}
 		} else if (e.target.name === 'from_email') {
 			const isValid = validateEmail(e.target.value);
@@ -59,14 +59,14 @@ function App() {
 				setSubMessage('Your email is invalid.');
 			} else {
 				setSubMessage('');
-				setFormState({...formState, from_email: e.target.value});
+				setFormState({ ...formState, from_email: e.target.value });
 			}
 		} else {
 			if (!e.target.value.length) {
 				setSubMessage(`A message is required.`);
 			} else {
 				setSubMessage('');
-				setFormState({...formState, message: e.target.value});
+				setFormState({ ...formState, message: e.target.value });
 			}
 		}
 	};
@@ -129,7 +129,7 @@ function App() {
 					<>
 						<h1 className="top-container">Contact Me</h1>
 						<form id="contact-form" onSubmit={handleSubmit}>
-						{subMessage && (
+							{subMessage && (
 								<div>
 									<p className="error-text">{subMessage}</p>
 								</div>
@@ -146,7 +146,7 @@ function App() {
 								<label htmlFor="message"></label>
 								<textarea name="message" rows="5" placeholder="Message" className="message-box" onChange={handleChange} />
 							</div>
-							
+
 							<button className="submit-button" type="submit">Submit</button>
 						</form>
 					</>
@@ -155,22 +155,11 @@ function App() {
 				{currentCategory === categories[3] &&
 					<>
 						<h1 className="top-container">Resume </h1>
-						<a id="resume-link" href={resume} download>Resume Download</a>
-
-						<h2 id="skills">Skills</h2>
-
-						<ul id="skill-list-container">
-							<li>Java</li>
-							<li>Javascript</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Git</li>
-							<li>Rest APIs</li>
-							<li>Node.js</li>
-							<li>SQL</li>
-							<li>NoSQL</li>
-							<li>PWA</li>
-						</ul>
+						<div className="flexbox resume-container">
+							<a id="resume-link" href={resume} download>
+								<img src={resume} className="resume" alt="resume" />
+							</a>
+						</div>
 					</>
 				}
 			</main>
