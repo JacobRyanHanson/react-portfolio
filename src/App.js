@@ -93,11 +93,12 @@ function App() {
 							</div>
 							<div className="about-text-container flexbox">
 								<p className="about-text">
-									Adaptable Computer Science major (3.94 GPA) currently attending the University of Wisconsin-Milwaukee,
-									with ~2 years of equivalent work experience. Aiming to leverage a proven knowledge of web development,
-									data structures, and algorithms to successfully fill the software engineer intern role at your company.
-									Frequently praised as detail-oriented by my peers and recognized for my passion in problem-solving, I
-									can be relied upon to help your company achieve its goals.
+									Adaptable Computer Science major (3.94 GPA) currently attending the University of 
+									Wisconsin-Milwaukee, with ~2 years of equivalent work experience. Aiming to leverage 
+									a proven knowledge of web development, data structures, and algorithms to fill a 
+									software engineering role successfully. Frequently praised as detail-oriented by my 
+									peers and recognized for my passion in problem-solving, I can be relied upon to help 
+									achieve company goals.
 								</p>
 							</div>
 						</div>
