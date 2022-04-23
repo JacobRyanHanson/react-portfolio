@@ -6,7 +6,8 @@ import Footer from './components/Footer';
 import Project from './components/Project';
 import avatar from "./assets/img/me.jpg";
 import certificate from "./assets/img/full-stack-certificate.jpg"
-import resume from "./assets/resume/Resume.png";
+import resumeImg from "./assets/resume/Resume.png";
+import resumePDF from "./assets/resume/Resume.pdf";
 import hero from "./assets/img/hero.png"
 
 function App() {
@@ -85,32 +86,18 @@ function App() {
 				{currentCategory === categories[0] &&
 					<>
 						<h1 className="top-container">About</h1>
-						<div className="flexbox">
+						<div className="about-container flexbox">
 							<div className="img-container flexbox">
 								<img src={avatar} className="avatar" alt="avatar" />
 								<img src={certificate} className="full-stack-certificate" alt="full-stack-certificate" />
 							</div>
-							<div className="about-text-container">
+							<div className="about-text-container flexbox">
 								<p className="about-text">
-									I am a student attending the University of Wisconsin-Milwaukee, with a solid foundation in
-									object-oriented design and practical experience working in teams and developing websites. My
-									degree focuses on computer science with an emphasis on software engineering, supplemented by
-									my mathematics minor. I am highly motivated by my passion for innovative development and am
-									well versed in working with and adapting to emerging technologies. When working on projects,
-									I make it a point to cultivate a deeper understanding of how and why components operate before
-									analyzing functionality as a whole. In this way, I find my implementations more effective,
-									mistakes more informative, and troubleshooting more comprehensive.
-								</p>
-								<p className="about-text-sub-top">
-									I have approximately two years of equivalent work experience in software engineering and full-stack
-									development between my education, certifications, and projects. I'm well versed in algorithm
-									optimization, data structures, memory manipulation, and web design. In addition, I have worked with
-									various technologies, including MERN, PWAs, and APIs to provide responsive and dynamic user experiences.
-								</p>
-								<p className="about-text-sub-bottom">
-									I effectively outlined, set goals and timeframes, delegated, and communicated to complete both Finance
-									Assistant and Game Spot Blog. I also have been recognized on several occasions by UWM for my academic
-									performance earning me a place on the Dean's List.
+									Adaptable Computer Science major (3.94 GPA) currently attending the University of Wisconsin-Milwaukee,
+									with ~2 years of equivalent work experience. Aiming to leverage a proven knowledge of web development,
+									data structures, and algorithms to successfully fill the software engineer intern role at your company.
+									Frequently praised as detail-oriented by my peers and recognized for my passion in problem-solving, I
+									can be relied upon to help your company achieve its goals.
 								</p>
 							</div>
 						</div>
@@ -156,11 +143,11 @@ function App() {
 				{currentCategory === categories[3] &&
 					<>
 						<h1 className="top-container">Resume </h1>
-						<a className="resume-link" href={resume} download>
-							<div className="resume-container flexbox">
-								<img src={resume} className="resume" alt="resume" />
-							</div>
-						</a>
+						<div className="resume-container flexbox">
+							<a className="resume-link" href={resumePDF} download>
+								<img src={resumeImg} className="resume" alt="resume" />
+							</a>
+						</div>
 					</>
 				}
 			</main>
