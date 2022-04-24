@@ -249,12 +249,12 @@ input {
 /* Footer Styles */
 .logo-box {
 	width: 100%;
+	background: var(--background-blend);
 }
 
 .logo-container {
 	margin: 0 15px;
 	justify-content: space-between;
-	background: var(--background-blend);
 }
 
 .github-logo,
