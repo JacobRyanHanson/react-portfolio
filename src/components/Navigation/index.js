@@ -12,7 +12,7 @@ function Naviation({ props }) {
             <ul className="nav-link-container flexbox">
                 {categories.map((category) => (
                     <li key={category.name}
-                        id= {category.name}
+                        id={category.name}
                         className={`list-item ${currentCategory.name === category.name && 'navActive'}`}
                         onClick={() => {setCurrentCategory(category);}}
                     >
