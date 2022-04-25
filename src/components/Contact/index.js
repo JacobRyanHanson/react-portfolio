@@ -17,7 +17,7 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (formState.from_name.length && formState.from_email.length && formState.message.length) {
+        if (formState.from_name.length && formState.from_email.length && formState.message.length && validateEmail(formState.from_email)) {
             setSubMessage('Sending email...');
             emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
                 .then((result) => {
@@ -30,7 +30,9 @@ function Contact() {
                 }, (error) => {
                     setSubMessage('An internal error has occured. Please refresh the page and try again.');
                 });
-        } else {
+        } else if (!subMessage.length && !validateEmail(formState.from_email)) {
+            setSubMessage('Your email is invalid.');
+        } else if (!subMessage.length) {
             setSubMessage('Please fill out the entire form.');
         }
     };
