@@ -38,12 +38,13 @@ function App() {
 							</div>
 							<div className="about-text-container flexbox">
 								<p className="about-text">
-									Adaptable Computer Science major (3.94 GPA) currently attending the University of 
-									Wisconsin-Milwaukee, with ~2 years of equivalent work experience. Aiming to leverage 
-									a proven knowledge of web development, data structures, and algorithms to fill a 
-									software engineering role successfully. Frequently praised as detail-oriented by my 
-									peers and recognized for my passion in problem-solving, I can be relied upon to help 
-									achieve company goals.
+									Spftware Engineer with approximately 1+ years of equivalent work experience 
+									creating and executing innovative software solutions to enhance business 
+									productivity. Familiar with the complete software development lifecycle (SDLC), 
+									full stack (front-end/back-end) development, and aspects of machine learning. 
+									Constructed a diverse collection of 30+ applications using both static and 
+									dynamic languages, implementing additional frameworks to enhance design and 
+									functionality.
 								</p>
 							</div>
 						</div>
