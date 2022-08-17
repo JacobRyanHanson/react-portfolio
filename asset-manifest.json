@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e1926f0c.css",
-    "main.js": "/react-portfolio/static/js/main.71e25e26.js",
+    "main.css": "/react-portfolio/static/css/main.572b32b6.css",
+    "main.js": "/react-portfolio/static/js/main.66ddf4cd.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/me.jpg": "/react-portfolio/static/media/me.ea7c48595a78d59f4edb.jpg",
     "static/media/finance-assistant.png": "/react-portfolio/static/media/finance-assistant.89439f8ae4cd8b8893aa.png",
     "static/media/pizza-hunt.png": "/react-portfolio/static/media/pizza-hunt.5d49515756fd56408762.png",
     "static/media/zookeeper.png": "/react-portfolio/static/media/zookeeper.529f6989ca5027e63ea2.png",
-    "static/media/Resume.png": "/react-portfolio/static/media/Resume.9e4993beceff6d901f50.png",
     "static/media/hero.png": "/react-portfolio/static/media/hero.173b1cf39774b08b8bb2.png",
     "static/media/full-stack-certificate.jpg": "/react-portfolio/static/media/full-stack-certificate.d8e86a22ed10d554738a.jpg",
+    "static/media/Resume.png": "/react-portfolio/static/media/Resume.4464524d127e362e6dd8.png",
     "static/media/taskmaster-pro.png": "/react-portfolio/static/media/taskmaster-pro.64536db047a5197b0cae.png",
     "static/media/budget-tracker.png": "/react-portfolio/static/media/budget-tracker.6e5da2eeea30bf0c4571.png",
     "static/media/deep-thoughts.png": "/react-portfolio/static/media/deep-thoughts.838e62d8bd06fcf20cdd.png",
-    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.b53b3fe76899c52b3bba.pdf",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.43584215a88afd2ad863.pdf",
+    "static/media/avatar.jpg": "/react-portfolio/static/media/avatar.37c6ce7064801abd551e.jpg",
     "static/media/stack-overflow-logo.png": "/react-portfolio/static/media/stack-overflow-logo.d55c1ea2ce1cbbe9a309.png",
     "static/media/linkedin-logo.png": "/react-portfolio/static/media/linkedin-logo.9a1a7f8162140e296345.png",
     "index.html": "/react-portfolio/index.html",
-    "main.e1926f0c.css.map": "/react-portfolio/static/css/main.e1926f0c.css.map",
-    "main.71e25e26.js.map": "/react-portfolio/static/js/main.71e25e26.js.map",
+    "main.572b32b6.css.map": "/react-portfolio/static/css/main.572b32b6.css.map",
+    "main.66ddf4cd.js.map": "/react-portfolio/static/js/main.66ddf4cd.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1926f0c.css",
-    "static/js/main.71e25e26.js"
+    "static/css/main.572b32b6.css",
+    "static/js/main.66ddf4cd.js"
   ]
 }
