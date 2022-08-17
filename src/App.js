@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Project from './components/Project';
 import Contact from './components/Contact'
-import avatar from "./assets/img/me.jpg";
+import avatar from "./assets/img/avatar.jpg";
 import certificate from "./assets/img/full-stack-certificate.jpg"
 import resumeImg from "./assets/resume/Resume.png";
 import resumePDF from "./assets/resume/Resume.pdf";
@@ -38,13 +38,14 @@ function App() {
 							</div>
 							<div className="about-text-container flexbox">
 								<p className="about-text">
-									Spftware Engineer with approximately 1+ years of equivalent work experience 
-									creating and executing innovative software solutions to enhance business 
-									productivity. Familiar with the complete software development lifecycle (SDLC), 
-									full stack (front-end/back-end) development, and aspects of machine learning. 
-									Constructed a diverse collection of 30+ applications using both static and 
-									dynamic languages, implementing additional frameworks to enhance design and 
-									functionality.
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+									Etiam consectetur, leo sit amet tempus venenatis, libero 
+									risus auctor augue, vitae lobortis ex magna ut nunc. Ut 
+									vestibulum tellus et massa tincidunt suscipit. Cras nec 
+									ipsum in nulla porttitor eleifend. Duis ex libero, tempus 
+									sit amet malesuada eu, dictum sit amet est. Ut maximus 
+									tellus ac urna tincidunt pulvinar. Aenean rhoncus tincidunt 
+									sem ac cursus. Proin porta libero eu facilisis fermentum.
 								</p>
 							</div>
 						</div>
@@ -68,7 +69,7 @@ function App() {
 
 				{currentCategory === categories[3] &&
 					<>
-						<h1 className="top-container">Resume </h1>
+						<h1 className="top-container">Resume (Sample)</h1>
 						<div className="resume-container flexbox">
 							<a className="resume-link" href={resumePDF} download>
 								<img src={resumeImg} className="resume" alt="resume" />
